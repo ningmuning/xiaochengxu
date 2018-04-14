@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/swiper/swiper",
+    "pages/styleview/styleview",
+    "pages/scrollview/scrollview",
+    "pages/pageone/pageone",
+    "pages/text/text",
+    "pages/pagetwo/pagetwo",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "facebook",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+  
+}

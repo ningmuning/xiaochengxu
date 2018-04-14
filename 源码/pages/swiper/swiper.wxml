@@ -1,0 +1,59 @@
+<!--pages/swiper/swiper.wxml-->
+<view>
+    <!--图片变换  -->
+    <view class='hedaer'>
+        <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}'>
+            <swiper-item>
+                <image src="/images/beauty_1.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/beauty_2.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/beauty_3.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/beauty_4.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/beauty_5.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/beauty_6.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/beauty_7.jpg"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <!--scrollview  -->
+    <view class='toTop'>
+        <scroll-view style='height:500rpx' scroll-y="true" bindscrolltoupper="toUpper" bindscrolltolower="toLower" scroll-top="{{scrollTop}}" scroll-into-view="{{scrollIntoView}}">
+        <view class='item'>
+            <image src="/images/purity_4.jpg"></image>
+        </view>
+        <view class='item'>
+            <image src="/images/purity_1.png"></image>
+        </view>
+        <view class='item'>
+            <image src="/images/purity_3.png"></image>
+        </view>
+        <view class='item'>
+            <image src="/images/purity_5.jpg"></image>
+        </view>
+        <view class='item'>
+            <image src="/images/purity_2.png"></image>
+        </view>
+        </scroll-view>
+        <view style='display:flex;margin-top:25rpx;'>
+            <button bindtap='setScrollTop'>向下滑动</button>
+            <button bindtap='setScrollBottom'>向上滑动</button>
+        </view>
+    </view>
+    <view class='next'>
+        <navigator open-type='navigate' url='/pages/styleview/styleview'>
+            <image src='/images/next.jpg'></image>
+        </navigator>  
+    </view>
+</view>

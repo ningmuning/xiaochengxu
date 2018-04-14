@@ -1,0 +1,3 @@
+<!--pages/text/text.wxml-->
+<text selectable='{{selectable}}'>pages/text/text.wxml</text>
+<view>this is view</view>

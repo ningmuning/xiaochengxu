@@ -1,0 +1,5 @@
+<!--pages/pageone/pageone.wxml-->
+<view>第一页</view>
+<view>全局数据：{{globalData}}</view>
+<navigator open-type='navigate' url='/pages/logs/logs'>skip to log</navigator>
+<view style="width:400rpx;height:1500rpx;background-color:red;"></view>

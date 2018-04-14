@@ -1,0 +1,14 @@
+<!--pages/scrollview/scrollview.wxml-->
+<view>
+   <scroll-view style='height:400rpx' scroll-y="true" bindscrolltoupper="toUpper" bindscrolltolower="toLower" scroll-top="{{scrollTop}}" scroll-into-view="{{scrollIntoView}}">
+   <view id="red" class='item v1'></view>
+   <view id="yellow" class='item v2'></view>
+   <view id="blue" class='item v3'></view>
+   </scroll-view>
+   <view>
+      <button bindtap='setScrollTop'>设置scrollTop</button>
+   </view>
+   <view>
+      <button bindtap='setScrollIntoView'>设置scrollIntoView</button>
+   </view>
+</view>

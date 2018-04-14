@@ -1,0 +1,35 @@
+<!--pages/styleview/styleview.wxml-->
+<view class='container'>
+    <view class='section s1'>
+         <view style='width:15%;display:flex;justify-content:center;'>
+             <image src='/images/ai3.png' style='height:40rpx;width:40rpx'></image>
+         </view>
+         <view style='display:flex;flex-grow:1'>
+             <image src='/images/ath.png' style='height:40rpx;width:40rpx'></image>
+             <input placeholder='商品搜素'></input>
+         </view>
+         <view style='width:15%;'>
+             <image src='/images/ahv.png' style='height:40rpx;width:40rpx'></image>
+         </view>
+    </view>
+    <view class="section tc">
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"   enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>
+    <view class='section s3'>
+         <block wx:for="{{logos}}">
+              <view style='display:flex;flex-direction:column;width:150rpx;align-items:center;'>
+                   <image src='{{item.image}}' style='height:100rpx;width:100rpx;' mode='aspectFill'></image>
+                   <text>{{item.title}}</text>
+              </view>
+         </block>
+    </view>
+    <view class='previous'>
+        <navigator open-type='navigate' url='/pages/swiper/swiper'>
+            <image src='/images/previous.png'></image>
+        </navigator>
+    </view>
+</view>

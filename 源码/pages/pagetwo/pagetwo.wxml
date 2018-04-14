@@ -1,0 +1,13 @@
+<!--pages/pagetwo/pagetwo.wxml-->
+<view>第二页</view>
+<view>
+  <view>
+    <view>局部数据{{localData}}</view>
+    <button size='mini' type='primary' bindtap='onlocalTap'>skip</button>
+  </view>
+
+  <view>
+    <view>全局数据{{globalData}}</view>
+    <button size='mini' type='primary' bindtap='onglobalTap'>skip</button>
+  </view>
+</view>
